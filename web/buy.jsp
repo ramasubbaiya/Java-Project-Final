@@ -55,7 +55,7 @@
             <tr>
                 <td width="134" height="29">&nbsp;</td>
                 <td width="303" align="center"><form action="buyedit.jsp"><input type="Submit" name="Edit" value="Edit" />
-                        <input type="hidden" name="mid" value=<%=rs.getString(2)%> /></form></td>
+                        <input type="hidden" name="name" value=<%=rs.getString(2)%> /></form></td>
             </tr>
             <tr>
                 <td height="29" align="right"><strong>Phone No.</strong></td>
@@ -67,7 +67,7 @@
             </tr>
         </table>
         <%}%>
-        <p><form action="orderconf.jsp">
+        <p><form action="payment.jsp">
                 <input type="Submit" name="Confirm" value="Confirm" />
             </form></p>
         <p>

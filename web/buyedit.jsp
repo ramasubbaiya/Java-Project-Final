@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Untitled Document</title>
+        <title>Edit page</title>
         <style type="text/css">
             .right {text-align: right;
             }
@@ -38,9 +38,9 @@
             conn = DriverManager.getConnection("jdbc:as400:174.79.32.158", "IBM65", "IBM65");
 
             Statement st = conn.createStatement();
-            String sql = "SELECT * from register1 where mid=?";
+            String sql = "SELECT * from register1 where name=?";
             ps = conn.prepareStatement(sql);
-            ps.setString(1, request.getParameter("mid"));
+            ps.setString(1, request.getParameter("name"));
             rs = ps.executeQuery();
             while (rs.next()) {
         %><form action="updatemem.jsp"><table width="473" height="138" border="1">
@@ -54,7 +54,7 @@
                 </tr>
             </table>
             <p> <input type="submit" value="Confirm" />
-                <input type="hidden" name="mid1" value=<%=rs.getString(2)%> />
+                <input type="hidden" name="id" value=<%=rs.getString(2)%> />
                 <%}%>
             </p>
         </form>

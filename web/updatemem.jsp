@@ -18,13 +18,13 @@
             conn = DriverManager.getConnection("jdbc:as400:174.79.32.158", "IBM65", "IBM65");
 
             Statement st = conn.createStatement();
-            String sql = "UPDATE register1 set addresss=?, phone=? where mid=?";
+            String sql = "UPDATE register1 set address=?, phone=? where name=?";
             ps = conn.prepareStatement(sql);
-            ps.setString(3, request.getParameter("mid1"));
             ps.setString(1, request.getParameter("address"));
             ps.setString(2, request.getParameter("phone"));
+            ps.setString(3, request.getParameter("id"));
             ps.executeUpdate();
         %>
-        <jsp:forward page="orderconf.jsp"/>
+        <jsp:forward page="payment.jsp"/>
     </body>
 </html>

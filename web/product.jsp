@@ -104,7 +104,7 @@
                         </tr>
                         <tr>
                             <td class="center1">Price :</td>
-                            <td><%=rs.getString(4)%></td>
+                            <td>$<%=rs.getString(4)%></td>
                         </tr>
                         <%}%>
                     </table>
