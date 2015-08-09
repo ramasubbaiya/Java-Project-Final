@@ -42,7 +42,7 @@
             Statement st = con.createStatement();
             if (type == "brand");
             {
-                ps = con.prepareStatement("select * from mtable where company=?");
+                ps = con.prepareStatement("select * from mtable where brand=?");
                 ps.setString(1, category);
             }
             /*else if(type=="mtype")
@@ -54,11 +54,11 @@
              }
              else if(category=="sma")
              {
-             ps=con.prepareStatement("select * from mtable where price>=15000");
+             ps=con.prepareStatement("select * from mtable where price>=150");
              }
              else if(category=="val")
              {
-             ps=con.prepareStatement("select * from mtable where price<=10000");
+             ps=con.prepareStatement("select * from mtable where price<=1000");
              }
              else if(category=="win")
              {
@@ -104,7 +104,7 @@
 
                                                 </td>
                                                 <td width="791"><p><%=rs2.getString(3)%> <%=rs2.getString(2)%></p>
-                                                    <p>Rs. <%=rs2.getString(4)%></p><%}%></td></tr><%}%>
+                                                    <p>$<%=rs2.getString(4)%></p><%}%></td></tr><%}%>
 
 
 

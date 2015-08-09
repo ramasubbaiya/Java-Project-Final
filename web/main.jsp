@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Untitled Document</title>
+        <title>Shopping List</title>
         <style type="text/css">
             .right {
                 text-align: right;
@@ -19,6 +19,12 @@
                 font-family: Arial, Helvetica, sans-serif;
             }
             .center1 {	text-align: center;
+            }
+            #float_right{
+                float:right;
+            }
+            #align_top{
+                margin-bottom: 820px;
             }
         </style>
     </head>
@@ -52,7 +58,7 @@
                     <hr /></td>
             </tr>
             <tr>
-                <td><table width="251" height="482" border="0">
+                <td><table width="251" height="180" border="0" valign="top" id="align_top">
                         <tr>
                             <td height="184"><table width="242" height="171" border="0">
                                     <tr>
@@ -80,36 +86,11 @@
                                     </tr>
                                 </table></td>
                         </tr>
-                        <tr>
-                            <td height="201"><table width="243" height="180" border="0">
-                                    <tr>
-                                        <td width="233" class="normal">MOBILE TYPES</td>
-                                    </tr>
-                                    <tr>
-                                        <td><form action="category.jsp">
-                                                <input type="hidden" name="type" value="mtype" /><input type="hidden" name="category" value="and" /><input type="image" src="images/and.png" /></form></td>
-                                    </tr>
-                                    <tr>
-                                        <td><form action="category.jsp">
-                                                <input type="hidden" name="type" value="mtype" /><input type="hidden" name="category" value="sma" /><input type="image" src="images/sma.png" /></form></td>
-                                    </tr>
-                                    <tr>
-                                        <td><form action="category.jsp">
-                                                <input type="hidden" name="type" value="mtype" /><input type="hidden" name="category" value="dua" /><input type="image" src="images/dua.png" /></form></td>
-                                    </tr>
-                                    <tr>
-                                        <td><form action="category.jsp">
-                                                <input type="hidden" name="type" value="mtype" /><input type="hidden" name="category" value="val" /><input type="image" src="images/val.png" /></form></td>
-                                    </tr>
-                                    <tr>
-                                        <td><form action="category.jsp">
-                                                <input type="hidden" name="type" value="mtype" /><input type="hidden" name="category" value="win" /><input type="image" src="images/win.png" /></form></td>
-                                    </tr>
-                                </table></td>
-                        </tr>
+                   
+                    </table>
 
-                    </table></td>
-                <td><table width="725" height="684" border="0">
+                    </td>
+                <td><table width="725" height="684" border="0" valign="right" id="float_right">
                         <tr class="normal">
                             <td height="30">NEW ARRIVALS</td>
                         </tr>
@@ -160,34 +141,34 @@
                                                                                                                                             <td width="228"><table width="120" height="173" border="0" align="center">
                                                                                                                                                     <tr>
                                                                                                                                                         <td><form action="product.jsp"> 
-                                                                                                                                                                <input type="hidden" name="product" value="S001"> 
-                                                                                                                                                                    <input name="buy" type="image" value="grand" src="images/in_GT-I9082EWAINU_000000001_Front_white.jpg" width="114" height="165"> 
+                                                                                                                                                                <input type="hidden" name="product" value="I001"> 
+                                                                                                                                                                    <input name="buy" type="image" value="grand" src="images/iphone6.jpg" width="114" height="165"> 
                                                                                                                                                                         </form></td>
                                                                                                                                                                         </tr>
                                                                                                                                                                         </table>
-                                                                                                                                                                        <p class="center1">Samsung Galaxy Grand</p>
-                                                                                                                                                                        <p class="center1">$300</p>
+                                                                                                                                                                        <p class="center1">iPhone 6</p>
+                                                                                                                                                                        <p class="center1">$800</p>
                                                                                                                                                                         </td>
                                                                                                                                                                         <td width="240" class="center1"><table width="117" height="173" border="0" align="center">
                                                                                                                                                                                 <tr>
                                                                                                                                                                                     <td width="111"><form action="product.jsp"> 
-                                                                                                                                                                                            <input type="hidden" name="product" value="S002">
-                                                                                                                                                                                                <input name="buy" type="image" value="s4" src="images/in_GT-I9500ZWAINU_042_Front_black.jpg" width="100" height="165"> 
+                                                                                                                                                                                            <input type="hidden" name="product" value="S003">
+                                                                                                                                                                                                <input name="buy" type="image" value="s4" src="images/Samsung-S6.jpg" width="100" height="165"> 
                                                                                                                                                                                                     </form></td>
                                                                                                                                                                                                     </tr>
                                                                                                                                                                                                     </table></p>
-                                                                                                                                                                                                    <p>Samsung Galaxy S4</p>
-                                                                                                                                                                                                    <p>$400</p></td>
+                                                                                                                                                                                                    <p>Samsung Galaxy S6</p>
+                                                                                                                                                                                                    <p>$600</p></td>
                                                                                                                                                                                                     <td width="224"><table width="120" height="173" border="0" align="center">
                                                                                                                                                                                                         <tr>
                                                                                                                                                                                                         <td><form action="product.jsp"> 
-                                                                                                                                                                                                        <input type="hidden" name="product" value="L001"> 
-                                                                                                                                                                                                        <input name="buy" type="image" value="g pro" src="images/LG-Optimus-G-Pro_8.jpg" width="104" height="165"> 
+                                                                                                                                                                                                        <input type="hidden" name="product" value="N001"> 
+                                                                                                                                                                                                        <input name="buy" type="image" value="g pro" src="images/Nokia-Lumia-Icon.jpg" width="104" height="165"> 
                                                                                                                                                                                                         </form></td>
                                                                                                                                                                                                         </tr>
                                                                                                                                                                                                         </table>
-                                                                                                                                                                                                        <p class="center1">LG Optimus G Pro</p>
-                                                                                                                                                                                                        <p class="center1">$450</p>
+                                                                                                                                                                                                        <p class="center1">Nokia Lumia Icon</p>
+                                                                                                                                                                                                        <p class="center1">$550</p>
                                                                                                                                                                                                         </td>
                                                                                                                                                                                                         </tr>
                                                                                                                                                                                                         </table></td>
@@ -198,17 +179,17 @@
                                                                                                                                                                                                         <tr>
                                                                                                                                                                                                         <td height="261"><table width="714" height="258" border="0">
                                                                                                                                                                                                         <tr>
-                                                                                                                                                                                                        <td width="228"><table width="120" height="173" border="0" align="center">
-                                                                                                                                                                                                        <tr>
-                                                                                                                                                                                                        <td><form action="product.jsp"> 
-                                                                                                                                                                                                        <input type="hidden" name="product" value="S001"> 
-                                                                                                                                                                                                        <input name="buy" type="image" value="grand" src="images/in_GT-I9082EWAINU_000000001_Front_white.jpg" width="114" height="165"> 
-                                                                                                                                                                                                        </form></td>
-                                                                                                                                                                                                        </tr>
-                                                                                                                                                                                                        </table>
-                                                                                                                                                                                                        <p class="center1">Samsung Galaxy Grand</p>
-                                                                                                                                                                                                        <p class="center1">$300</p>
-                                                                                                                                                                                                        </td>
+                                                                                                                                                                                                                     <td width="228"><table width="120" height="173" border="0" align="center">
+                                                                                                                                                    <tr>
+                                                                                                                                                        <td><form action="product.jsp"> 
+                                                                                                                                                                <input type="hidden" name="product" value="I001"> 
+                                                                                                                                                                    <input name="buy" type="image" value="grand" src="images/iphone6.jpg" width="114" height="165"> 
+                                                                                                                                                                        </form></td>
+                                                                                                                                                                        </tr>
+                                                                                                                                                                        </table>
+                                                                                                                                                                        <p class="center1">iPhone 6</p>
+                                                                                                                                                                        <p class="center1">$800</p>
+                                                                                                                                                                        </td>
                                                                                                                                                                                                         <td width="240" class="center1"><table width="117" height="173" border="0" align="center">
                                                                                                                                                                                                         <tr>
                                                                                                                                                                                                         <td width="111"><form action="product.jsp"> 
@@ -217,18 +198,18 @@
                                                                                                                                                                                                         </form></td>
                                                                                                                                                                                                         </tr>
                                                                                                                                                                                                         </table></p>
-                                                                                                                                                                                                        <p>Samsung Galaxy S4</p>
-                                                                                                                                                                                                        <p>$400</p></td>
+                                                                                                                                                                                                        <p>Samsung Galaxy S5</p>
+                                                                                                                                                                                                        <p>$600</p></td>
                                                                                                                                                                                                         <td width="224"><table width="120" height="173" border="0" align="center">
                                                                                                                                                                                                         <tr>
                                                                                                                                                                                                         <td><form action="product.jsp"> 
                                                                                                                                                                                                         <input type="hidden" name="product" value="L001"> 
-                                                                                                                                                                                                        <input name="buy" type="image" value="g pro" src="images/LG-Optimus-G-Pro_8.jpg" width="104" height="165"> 
+                                                                                                                                                                                                        <input name="buy" type="image" value="g pro" src="images/in_GT-I9082EWAINU_000000001_Front_white1.jpg" width="104" height="165"> 
                                                                                                                                                                                                         </form></td>
                                                                                                                                                                                                         </tr>
                                                                                                                                                                                                         </table>
-                                                                                                                                                                                                        <p class="center1">LG Optimus G Pro</p>
-                                                                                                                                                                                                        <p class="center1">$450</p>
+                                                                                                                                                                                                        <p class="center1">Note 4</p>
+                                                                                                                                                                                                        <p class="center1">$550</p>
                                                                                                                                                                                                         </td>
                                                                                                                                                                                                         </tr>
                                                                                                                                                                                                         </table></td>
