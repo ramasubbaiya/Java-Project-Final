@@ -11,6 +11,14 @@
     </head>
 
     <body>
+        
+        <!--
+            Logout Page
+        
+            Session user is destroyed
+            Logout the current user
+        -->
+        
         <%@ page language="java" %>
         <table width="993" height="102" border="0">
             <tr>

@@ -11,6 +11,15 @@
     </head>
 
     <body>
+        
+        <!--
+        
+            Successfull Order
+        
+            Confirmation Details
+        
+        -->
+        
         <%@ page language="java" %>
         <%@ page import="java.sql.*" %>
         <%@ page import="java.sql.DriverManager.*" %>
@@ -32,6 +41,8 @@
             PreparedStatement ps;
             Connection conn;
             ResultSet rs = null;
+            
+            //Connection Establishment
             Class.forName("com.ibm.as400.access.AS400JDBCDriver");
             conn = DriverManager.getConnection("jdbc:as400:174.79.32.158", "IBM65", "IBM65");
 
@@ -45,6 +56,10 @@
         <p> Order Confirmed:</p>
         <table width="992" border="1" cellspacing="0">
             <tr>
+                <!--
+                    Details of the product
+                -->
+                
                 <td width="66" align="center"><strong>Item ID</strong></td>
                 <td width="354" align="center"><strong>Product Name &amp; Model</strong></td>
                 <td width="153" align="center"><strong>Brand</strong></td>
@@ -60,6 +75,10 @@
             </tr>
         </table>
         <%}%>
+        
+        <!--
+            Thanking message            
+        -->
         <p> Thanks for shopping with us. Your item will be delivered within 2-3 days.</p>
         <p><strong> Happy Shopping! </strong></p>
     </body>

@@ -11,6 +11,11 @@
     </head>
 
     <body>
+        <!--
+            Login Failure
+        
+            If the Username and Password is incorrect it redirects to login page
+        -->
         <table width="993" height="102" border="0">
             <tr>
                 <td width="251" height="96"><img src="head.png" width="251" height="88" alt="Logo" /></td>

@@ -12,7 +12,11 @@
     </head>
 
     <body>
-
+        <!--
+            Login Page
+        
+            User name and Password is asked from the user to ensure security
+        -->
         <center> 
             <form action="loginconf.jsp" method="post">
                 <table width="993" height="102" border="0">

@@ -34,6 +34,7 @@
             PreparedStatement ps;
             Connection conn;
             ResultSet rs = null;
+            //Connection Establishment done here
             Class.forName("com.ibm.as400.access.AS400JDBCDriver");
             conn = DriverManager.getConnection("jdbc:as400:174.79.32.158", "IBM65", "IBM65");
 
@@ -44,6 +45,9 @@
             rs = ps.executeQuery();
             while (rs.next()) {
         %><form action="updatemem.jsp"><table width="473" height="138" border="1">
+                <!--
+               Editing is done here for their details
+                -->
                 <tr>
                     <td width="92" height="33" align="right">Phone No.</td>
                     <td width="365"><input type="text" name="phone" value=<%=rs.getString(6)%> /></td>

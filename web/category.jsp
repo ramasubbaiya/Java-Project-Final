@@ -30,21 +30,29 @@
         </table>
         <hr />
         <%
+            //Category Page
+                    
             String pid = null;
             String category = request.getParameter("category");;
             String type = request.getParameter("type");
             PreparedStatement ps;
             Connection con;
             ResultSet rs = null, rs1 = null, rs2 = null;
+            
+            //Connection Establishment
             Class.forName("com.ibm.as400.access.AS400JDBCDriver");
             con = DriverManager.getConnection("jdbc:as400:174.79.32.158", "IBM65", "IBM65");
 
             Statement st = con.createStatement();
+            
+            //Selects and displays according to the brand
             if (type == "brand");
             {
                 ps = con.prepareStatement("select * from mtable where brand=?");
                 ps.setString(1, category);
             }
+            
+            
             /*else if(type=="mtype")
              {
              if(category=="and")
@@ -96,6 +104,7 @@
                                                 <%}%>
                                                 </table>
                                                 <%
+                                                    //Getting the the brand name and searching image for it with details
                                                     ps = con.prepareStatement("select * from mtable where prod_id=?");
                                                     ps.setString(1, pid);
                                                     rs2 = ps.executeQuery();

@@ -7,7 +7,10 @@
     </head>
 
     <body>
-
+        <!--
+            Checking with the database whether the username and password given is in database
+            Or Else it alerts to register
+        -->
         <%@ page language="java" %>
         <%@ page import="java.sql.*" %>
         <%@ page import="java.sql.DriverManager.*" %>

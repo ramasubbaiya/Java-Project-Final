@@ -11,6 +11,15 @@
     </head>
 
     <body>
+        
+        <!--
+        
+            Registration Page
+        
+            Asks users to enter certain details to fill up to register
+        
+        -->
+        
         <center>
             <table width="993" height="102" border="0">
                 <tr>

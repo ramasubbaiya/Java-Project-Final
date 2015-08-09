@@ -12,6 +12,13 @@
     </head>
 
     <body>
+        
+        <!--
+            Login Success Page
+        
+            Welcomes the user to go to home page or logout 
+        -->
+        
         <p>
             <%@ page import="java.sql.*" %>
 
@@ -31,8 +38,7 @@
             <hr />
             <br />
             Welcome <%=session.getAttribute("uname")%>,
-            <p>Click <a href="main.jsp
-                        ">here</a> to go to the Home Page.
+            <p>Click <a href="main.jsp">here</a> to go to the Home Page.
             </p> 
 
     </body>

@@ -12,7 +12,10 @@
     </head>
 
     <body>
-
+        <!--
+            Contact US page 
+            Details on the shopping
+        -->
         <center> 
             <form action="" method="post">
                 <table width="993" height="102" border="0">
@@ -32,19 +35,19 @@
                 <p>&nbsp;</p>
                 <table width="1"> 
                     <tr> 
-                         Contact US<br /><br />
+                        Contact US<br /><br />
                     </Tr> 
                     <b>RamaSubbaiya Mobile Shopping
-                    <br />
-                    125 College Ave South,
-                    <br />
-                    Sarnia - ON N7T 2Z5.
-                    <br />
-                    <br />
-                    <b>Have a Great Shopping!! For queries </b><a href="mailto:ramasubbaiya@gmail.com">ramasubbaiya@gmail.com</a>
-                    </Tr> 
-                    
-                    
+                        <br />
+                        125 College Ave South,
+                        <br />
+                        Sarnia - ON N7T 2Z5.
+                        <br />
+                        <br />
+                        <b>Have a Great Shopping!! For queries </b><a href="mailto:ramasubbaiya@gmail.com">ramasubbaiya@gmail.com</a>
+                        </Tr> 
+
+
                 </Table>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p> 

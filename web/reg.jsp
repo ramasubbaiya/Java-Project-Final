@@ -11,6 +11,15 @@
     </head>
 
     <body>
+        
+        <!--
+        
+            Saving the registration
+            
+            Users data is saved in the database
+        
+        -->
+        
         <%@ page language="java" %>
         <table width="993" height="102" border="0">
             <tr>
@@ -39,6 +48,8 @@
             PreparedStatement ps;
             Connection con;
             ResultSet rs = null;
+            
+            //Connection Establishment
             Class.forName("com.ibm.as400.access.AS400JDBCDriver");
             con = DriverManager.getConnection("jdbc:as400:174.79.32.158", "IBM65", "IBM65");
 

@@ -11,6 +11,13 @@
     </head>
 
     <body>
+        
+        <!--
+            
+            Search failure, If data which user enters doesn't, gives a error message
+        
+        -->
+        
         <table width="993" height="102" border="0">
             <tr>
                 <td width="251" height="96"><img src="head.png" width="251" height="88" alt="Logo" /></td>

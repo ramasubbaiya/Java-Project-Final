@@ -7,6 +7,15 @@
     </head>
 
     <body>
+        
+        <!--
+            
+            Editing the data which user enters
+        
+            Updated here
+            
+        -->
+        
         <%@ page language="java" %>
         <%@ page import="java.sql.*" %>
         <%@ page import="java.sql.DriverManager.*" %>
@@ -14,6 +23,8 @@
             PreparedStatement ps;
             Connection conn;
             ResultSet rs = null;
+            
+            //Connection Establishment
             Class.forName("com.ibm.as400.access.AS400JDBCDriver");
             conn = DriverManager.getConnection("jdbc:as400:174.79.32.158", "IBM65", "IBM65");
 

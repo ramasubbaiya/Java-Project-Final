@@ -12,6 +12,11 @@
     </head>
 
     <body>
+        
+        <!--
+            Payment Page
+        -->
+        
         <center> 
             <form action="orderconf.jsp">
                 <table width="993" height="102" border="0">
@@ -27,6 +32,13 @@
                     <tr> 
                         <td colspan="2" class="italics"> <h1>Bank Payment</h1> </td> 
                     </Tr> 
+                    
+                    <!--
+                    
+                        Asks for credit card no, name, CVV, for security and payment reasons
+                        
+                    -->
+                    
                     <tr> 
                         <td> Credit card No. </td> 
                         <td> <input type="text" size="20" data-stripe="number"/> </td> 

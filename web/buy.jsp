@@ -52,6 +52,10 @@
                 while (rs.next()) {%>
         </p>
         <table width="981" height="108" border="0" cellspacing="0">
+            <!--
+                  To edit Phone number and Address in the confirmation page
+                  It displays the Phone no. and Address
+            -->
             <tr>
                 <td width="134" height="29">&nbsp;</td>
                 <td width="303" align="center"><form action="buyedit.jsp"><input type="Submit" name="Edit" value="Edit" />
@@ -76,6 +80,10 @@
             Enter the following details:
         </p>
         <p>
+            <!--
+               To edit Phone number and Address in the confirmation page
+               Editing is done here
+            -->
             <form action="orderconf.jsp">
                 <table width="450" height="142" border="0">
                     <tr>

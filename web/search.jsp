@@ -13,6 +13,13 @@
     </head>
 
     <body>
+        
+        <!--
+        
+            It gets the user data and searches from the database
+        
+        -->
+        
         <%@ page language="java" %>
         <%@ page import="java.sql.*" %>
         <%@ page import="java.sql.DriverManager.*" %>
@@ -44,13 +51,19 @@
             <%
                 boolean flag = false;
                 String search = request.getParameter("search");
+                String search1 = request.getParameter("search");
+
             %>
-            <%
-                String pid = null;
+            <%                String pid = null;
+                search = Character.toUpperCase(search.charAt(0)) + search.substring(1);
                 search = "%" + search + "%";
+                search1 = Character.toUpperCase(search.charAt(0)) + search.substring(1);
+                search1 = "%" + search1 + "%";
+
                 try {
-                    ps = con.prepareStatement("SELECT * from mtable where mname like ?");
+                    ps = con.prepareStatement("SELECT * from mtable where brand like ? AND model like ?");
                     ps.setString(1, search);
+                    ps.setString(2, search1);
                     rs = ps.executeQuery();
                     if (rs.next()) {
                         flag = true;
